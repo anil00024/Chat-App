@@ -1,0 +1,29 @@
+# Realtime Chat Application
+
+## Features
+- User Authentication
+- Realtime Messaging
+- Online Users
+- Typing Indicator
+- JWT Authentication
+- SQLite Database
+
+## Tech Stack
+- React.js
+- Node.js
+- Express.js
+- Socket.io
+- SQLite
+- Sequelize
+
+## Setup
+
+### Frontend
+cd client
+npm install
+npm run dev
+
+### Backend
+cd server
+npm install
+npm run dev
