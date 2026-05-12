@@ -1,7 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "server.js", 
+
+  "engines": {
+  "node": "20.x"
+},
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"
