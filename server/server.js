@@ -197,12 +197,10 @@ app.get('/api/health', (req, res) => {
 
 // ================= ROOT ROUTE =================
 
-app.get('/', (req, res) => {
+app.use((req, res) => {
   res.status(200).json({
     success: true,
-
-    message:
-      'Realtime Chat Server Running 🚀',
+    message: 'Realtime Chat Server Running 🚀',
   })
 })
 
@@ -217,12 +215,12 @@ if (process.env.NODE_ENV === 'production') {
 
   app.use(express.static(clientPath))
 
-  app.get('*', (req, res) => {
+app.use((req, res) => {
 
-    res.sendFile(
-      path.join(clientPath, 'index.html')
-    )
-  })
+  res.sendFile(
+    path.join(clientPath, 'index.html')
+  )
+})
 }
 
 // ================= 404 HANDLER =================
