@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const API = axios.create({
   baseURL:
-    'http://localhost:5000/api',
+    'https://chat-app-3gt3.onrender.com',
 })
 
 export default API
